@@ -48,7 +48,9 @@ def menu():
                 udp_traceroute()
                 break
             case "3":
-                send_packet()
+                # packet = build_packet('192.99.99.99', '192.168.1.254')
+                # send_packet(packet)
+                build_packet('192.99.99.99', '192.168.1.254')
                 break
             case "0":
                 print("Saindo...")
