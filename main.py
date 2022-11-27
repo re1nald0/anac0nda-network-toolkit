@@ -29,10 +29,10 @@ def udp_traceroute():
     res.make_table(lambda s,r: (s.dst, s.ttl, r.src))
 
 def menu():
-    option = 0
+    option = -1
     print("Anac0nda's Network tool")
     
-    while option == 0:
+    while option != 0:
         print("Select an option")
         print("1- Discover hosts")
         print("2- UDP traceroute")
@@ -54,7 +54,7 @@ def menu():
                 print("Saindo...")
                 break
             case _:
-                option = 0
+                option = -1
                 print("Opcao invalida")
 
 def main():
