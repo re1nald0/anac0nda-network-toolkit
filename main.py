@@ -39,18 +39,18 @@ def menu():
         print("3- Send packet")
         print("0- Sair")
 
-        option = input()
+        option = input("> ")
         match option:
-            case 1:
+            case "1":
                 discover_hosts()
                 break
-            case 2:
+            case "2":
                 udp_traceroute()
                 break
-            case 3:
+            case "3":
                 send_packet()
                 break
-            case 0:
+            case "0":
                 print("Saindo...")
                 break
             case _:
